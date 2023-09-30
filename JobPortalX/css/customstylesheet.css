@@ -1,0 +1,411 @@
+﻿.footerlinks {
+    color: #ffffff;
+    text-decoration: none !important;
+}
+
+    .footerlinks:hover {
+        color: #ffd800;
+    }
+
+#footer1 {
+    background: #19b2e6;
+}
+
+#footer2 {
+    background: #2088ab;
+}
+
+.custom-navbar {
+    background-color: #007bff; /* Blue background color */
+}
+
+.rounded-circle {
+    border-radius: 50%; /* Use border-radius to create a circular shape */
+}
+
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background: #3586ff;
+    overflow: hidden;
+}
+    section .wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: url('/imgs/wave.png'); 
+        background-size: 1000px 100px;
+    }
+
+    section .wave.wave1 {
+        animation: animate 30s linear infinite;
+        z-index: 1000;
+        opacity: 1;
+        animation-delay: 0s;
+        bottom: 0;
+    }
+        section .wave.wave2 {
+            animation: animate2 15s linear infinite;
+            z-index: 999;
+            opacity: 0.5;
+            animation-delay: -5s;
+            bottom: 10px;
+        }
+        section .wave.wave3 {
+            animation: animate 30s linear infinite;
+            z-index: 998;
+            opacity: 0.2;
+            animation-delay: -2s;
+            bottom: 15px;
+        }
+        section .wave.wave4 {
+            animation: animate2 5s linear infinite;
+            z-index: 997;
+            opacity: 0.7;
+            animation-delay: -5s;
+            bottom: 20px;
+        }
+    @keyframes animate {
+        0% {
+            background-position-x: 0;
+        }
+        100% {
+            background-position-x: 1000px;
+        }
+    }
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+.form-box {
+    background: rgba(0,0,0,0.06);
+    width: 860px;
+    padding: 30px;
+    margin: 100px auto 0 auto;
+    border-radius: 5%;
+}
+
+.input-box {
+    position: relative;
+    height: 55px;
+    max-width: 1000px; /* Adjust the max-width as needed */
+    width: 800px; /* Adjust the width in pixels */
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+    .input-box i,
+    .input-box .button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .input-box i {
+        left: 20px;
+        font-size: 30px;
+        color: #707070;
+    }
+
+    .input-box input {
+        height: 100%;
+        width: 100%;
+        outline: none;
+        font-size: 14px;
+        font-weight: 400;
+        border: none;
+        padding: 0 155px 0 65px; /* Adjust the padding as needed */
+        background-color: transparent;
+    }
+
+    .input-box .separator {
+        position: relative;
+        top: -4px;
+        left: calc(8% - 5px); /* Adjust the position as needed */
+        color: #707070;
+        font-size: 24px;
+    }
+
+
+
+
+    .input-box .button {
+        right: 20px;
+        height: 35px; /* Adjust the height as needed */
+        font-size: 12px;
+        font-weight: 400;
+        color: #fff;
+        border: none;
+        padding: 8px 20px; /* Adjust the padding as needed */
+        border-radius: 6px;
+        background-color: #4070f4;
+        cursor: pointer;
+    }
+
+        .input-box .button:active {
+            transform: translateY(-50%) scale(0.98);
+        }
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+    .input-box {
+        height: 66px;
+        margin: 0 8px;
+    }
+
+        .input-box i {
+            left: 12px;
+            font-size: 25px;
+        }
+
+        .input-box input {
+            padding: 0 112px 0 50px;
+        }
+
+        .input-box .separator {
+            left: calc(50% - 3px); /* Adjust the position as needed */
+            font-size: 20px;
+        }
+
+
+
+        .input-box .button {
+            right: 12px;
+            font-size: 14px;
+            padding: 8px 18px;
+        }
+}
+
+.speech {
+    position: relative;
+    left: 300px;
+}
+
+
+
+
+.ui-autocomplete {
+    left: 1010px !important; /* Adjust the desired amount to move it to the right */
+    width: 340px !important; /* Set the desired width */
+    border-radius: 6px;
+}
+
+/* Remove bullet points and adjust the list style */
+ul.ui-autocomplete.ui-front {
+    list-style: none;
+    padding: 0;
+    border: 1px solid #ccc; 
+    background-color: #fff;
+    
+}
+
+    /* Style each list item */
+    ul.ui-autocomplete.ui-front li {
+        padding: 5px;
+        cursor: pointer;
+        border-bottom: 1px solid #ccc; 
+    }
+
+        /* Style the hover state of list items */
+        ul.ui-autocomplete.ui-front li:hover {
+            background-color: #f0f0f0; 
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    position: relative;
+    right: -750px;
+    bottom: -150px;
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+    .container .forms {
+        display: flex;
+        align-items: center;
+        height: 440px;
+        width: 200%;
+        transition: height 0.2s ease;
+    }
+
+    .container .form {
+        width: 50%;
+        padding: 30px;
+        background-color: #fff;
+        transition: margin-left 0.18s ease;
+    }
+
+    .container.active .login {
+        margin-left: -50%;
+        opacity: 0;
+        transition: margin-left 0.18s ease, opacity 0.15s ease;
+    }
+
+    .container .signup {
+        opacity: 0;
+        transition: opacity 0.09s ease;
+    }
+
+    .container.active .signup {
+        opacity: 1;
+        transition: opacity 0.2s ease;
+    }
+
+    .container.active .forms {
+        height: 600px;
+    }
+
+    .container .form .title {
+        position: relative;
+        font-size: 27px;
+        font-weight: 600;
+    }
+
+.form .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #4070f4;
+    border-radius: 25px;
+}
+
+.form .input-field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-field input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+    .input-field input:is(:focus, :valid) {
+        border-bottom-color: #4070f4;
+    }
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ i {
+    color: #4070f4;
+}
+
+.input-field i.icon {
+    left: 0;
+}
+
+.input-field i.showHidePw {
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.form .checkbox-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content {
+    
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input {
+    position: relative;
+    bottom: 3px;
+    margin-right: 10px;
+    accent-color: #4070f4;
+}
+
+.form .text {
+    color: #333;
+    font-size: 14px;
+}
+
+.form a.text {
+    color: #4070f4;
+    text-decoration: none;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.form .button {
+    margin-top: 35px;
+}
+
+    .form .button input {
+        border: none;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border-radius: 6px;
+        background-color: #4070f4;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+.button input:hover {
+    background-color: #265df2;
+}
+
+.form .login-signup {
+    margin-top: 30px;
+    text-align: center;
+}
+
