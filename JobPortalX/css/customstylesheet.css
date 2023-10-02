@@ -254,10 +254,12 @@ ul.ui-autocomplete.ui-front {
     .container .forms {
         display: flex;
         align-items: center;
-        height: 440px;
+        height: 500px;
         width: 200%;
         transition: height 0.2s ease;
     }
+   
+
 
     .container .form {
         width: 50%;
@@ -266,7 +268,7 @@ ul.ui-autocomplete.ui-front {
         transition: margin-left 0.18s ease;
     }
 
-    .container.active .login {
+   .container.active .login {
         margin-left: -50%;
         opacity: 0;
         transition: margin-left 0.18s ease, opacity 0.15s ease;
@@ -408,4 +410,21 @@ ul.ui-autocomplete.ui-front {
     margin-top: 30px;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
