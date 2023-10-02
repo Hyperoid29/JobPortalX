@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -22,6 +22,10 @@ namespace JobPortalX
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
             Response.Redirect("login.aspx");
+        }
+        protected void LinkButton2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Signup.aspx");
         }
     }
 }
