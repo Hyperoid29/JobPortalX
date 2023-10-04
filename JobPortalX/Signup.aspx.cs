@@ -65,10 +65,7 @@ namespace JobPortalX
 
         private bool IsEmailAlreadyRegistered(string email)
         {
-            // Implement logic to check if the email already exists in the database
-            // You can query the database to check if there's a record with the given email
-            // If it exists, return true; otherwise, return false
-            // Here's a simplified example (you should adapt this to your database structure):
+           
 
             SqlConnection con = new SqlConnection(strcon);
             if (con.State == ConnectionState.Closed)
